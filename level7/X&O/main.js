@@ -12,3 +12,10 @@ function XO(str) {
 
   console.log(XO('xoxoxoxo')) // true
   console.log(XO('xoxxxo')) // false
+
+
+  // or ALT solution
+
+  function XO(str) {
+    return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+}
