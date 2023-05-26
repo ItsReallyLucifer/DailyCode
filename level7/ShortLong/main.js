@@ -8,4 +8,4 @@ function solution(a, b){
     return (a.length > b.length) ? b + a + b : a + b + a;
   }
 
-  console.log(solution('hello','goodbye'))
+  console.log(solution('hello','goodbye')) // hellogoodbyehello
