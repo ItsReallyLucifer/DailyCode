@@ -9,3 +9,13 @@ function derive(a, b) {
 
   console.log(derive(10,2))
   console.log(derive(20,16))
+
+
+  //alt code parameters
+  
+  function derive(coefficient,exponent) {
+    return (coefficient * exponent).toString() + "x^" + (exponent -1).toString()
+        
+    }
+
+    console.log(derive(10,2))
