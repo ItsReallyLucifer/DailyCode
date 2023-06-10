@@ -9,4 +9,7 @@ function dutyFree(normPrice, discount, hol){
     return result
   }
 
+
   console.log(dutyFree(25, 15, 35))
+  console.log(dutyFree(10, 10, 500)) // 500
+  console.log(dutyFree(20,50,500)) // 50
