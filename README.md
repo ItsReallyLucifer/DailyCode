@@ -5,6 +5,7 @@
 This repository serves as a collection of daily solutions to CodeWars Katas. CodeWars is a platform that provides coding challenges, known as Katas, covering various difficulty levels and programming languages.
 You can view my profile below
 https://www.codewars.com/users/ItsReallyLucifer
+<img src=https://github.com/ItsReallyLucifer/DailyCode/blob/b5268153c69f60abaca82eb9e79a3a8a41c363d2/codewarsStatic.png>
 
 ## Daily Commitment
 
