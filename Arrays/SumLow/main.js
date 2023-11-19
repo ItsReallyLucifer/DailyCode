@@ -3,15 +3,19 @@
 // ex: [19, 5, 42, 2, 77] || (5+2) = 7
 
 
-function sumTwoSmallestNumbers(numbers) {
-    // Sort the array in ascending order
-    const sortedNumbers = numbers.sort((a, b) => a - b);
-  
-    // Sum the two lowest positive numbers (first and second elements)
-    const sum = sortedNumbers[0] + sortedNumbers[1];
-  
-    return sum;
-  }
+// function sumsTwoLowest(nums){
+//   const sortedArr = nums.sort((a, b) => a - b);
+//   const summedArr = sortedArr[0] + sortedArr[1]
+//   return summedArr
+// }
+// console.log(sumsTwoLowest([19,5,42,2,77]))
 
-  console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77])); //  7
-  console.log(sumTwoSmallestNumbers([29, 11, 42, 4, 25])); // Output: 15
+  // Methods used:
+  // * sort - sorts the elements of an array in place and returns the sorted array.
+
+  // OR
+
+  const sumsTwoLowest = nums => (nums.sort((a, b) => a - b), nums[0] + nums[1])
+  console.log(sumsTwoLowest([19,5,42,2,77])) // 7
+  console.log(sumsTwoLowest([1, 10, 3, 2])) // 3
+  console.log(sumsTwoLowest([9, 8, 7, 6])); // 13

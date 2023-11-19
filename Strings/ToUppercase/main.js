@@ -3,8 +3,13 @@
 
 
 function makeUpperCase(str) {
-    return str.toLocaleUpperCase();
+    return str.toUpperCase();
   }
 
 console.log(makeUpperCase('Did it work?')) // DID IT WORK?
 
+// OR
+
+// const makeUpperCase = str => str.toUpperCase()
+
+// console.log(makeUpperCase('Did it work?'))

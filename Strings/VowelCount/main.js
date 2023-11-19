@@ -1,16 +1,27 @@
 // Create a function that takes a string as input 
-//and returns the count of vowels (a, e, i, o, u, but not y)
+// and returns the count of vowels (a, e, i, o, u, but not y)
 // within the given string, which will consist only of lowercase letters and spaces.
 
 
-function getCount(str) {
-    // Use a regular expression to match and count all vowels (a, e, i, o, u)
-    const vowelMatches = str.match(/[aeiou]/gi) || [];
-  
-    // Return the length of the vowelMatches array
-    return vowelMatches.length;
-  }
-  
-  const inputString = "hello world";
-  const vowelCount = getCount(inputString);
-  console.log(vowelCount); // Output: 3 (e, o, o are vowels)
+function vowelCount(str) {
+  str = str.toLowerCase();
+  const characters = str.split('');
+  const vowels = ['a','e','i','o','u']
+  const vowelCharacters = characters.filter(char => vowels.includes(char));
+  const vowelString = vowelCharacters.join('');
+  return vowelString.length;
+}
+
+console.log(vowelCount('How many vowels?')) // 4
+
+// psuedo 
+// Convert the input string to lowercase for a case-insensitive count
+// Split the string into an array of characters
+// Define an array of vowels
+// Use the filter() method to keep only vowels in the array
+// Join the filtered array back into a string
+// Return the length of the vowelString
+
+
+//OR
+

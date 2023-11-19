@@ -4,12 +4,8 @@
 
 
 
-function sortByLength(array) {
-    // sort() method with a custom comparison function
-    return array.sort((a, b) => a.length - b.length);
-  }
+function sortArr(arr){
+  return arr.sort((a,b) => a.length - b.length)
+}
 
-  const inputArray = ["Mercedes", "Audi", "BMW"]
-  const newSorted = sortByLength(inputArray)
-  
-  console.log(newSorted) // [BMW, Audi, Mercedes]
+console.log(sortArr(['Mercedes', 'BMW', 'Audi']))

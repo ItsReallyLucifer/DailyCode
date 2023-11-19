@@ -4,18 +4,17 @@
 // example: x = [1,2,3,4,5] || t = 3  || (1+2 = 3) remove the second num so remove 2.
 
 
-function trouble(x, t){
-    for(var i=0; i<x.length; i++) {
-      if(x[i]+x[i+1]===t) {
-        x.splice(i+1,1);
-        i--;
+function trouble(x, t) {
+  return x.filter((value, index, array) => {
+      if (index < array.length - 1 && value + array[index + 1] === t) {
+          return false; // Exclude the next element.
+      } else {
+          return true; // Include the current element.
       }
-    }
-    
-    return x;
-  }
+  });
+}
 
-  const x = [1,2,3,4,5]
-  const t = 3
+const x = [1, 2, 3, 4, 5];
+const t = 3;
 
-  console.log(trouble(x, t)) // [1, 3, 4, 5]
+console.log(trouble(x, t)); // Output: [1, 3, 4, 5]

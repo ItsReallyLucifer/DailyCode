@@ -3,13 +3,23 @@
 // name is a valid string.
 
 
-function areYouPlayingBanjo(name) {
-    if(name[0] === 'R' || name[0] === 'r'){
-        return name + ' plays banjo'
+function playsBanjo(name){
+    if(name.toUpperCase()[0] === 'R'){
+        return name + " does play banjo"
     }else{
-        return name + ' does not play banjo'
+        return name + " does not play banjo"
     }
 }
 
-console.log(areYouPlayingBanjo('Robert')) // Robert plays banjo
-console.log(areYouPlayingBanjo('Tyler')) // Tyler does not play banjo
+console.log(playsBanjo('Robert')) // Robert does play banjo
+console.log(playsBanjo('robert')) // robert does play banjo
+console.log(playsBanjo('John')) // John doe not play banjo
+
+
+// OR
+
+// const playsBanjo = name => name[0].toUpperCase() === "R" ? name + " does play banjo" : name + " does not play banjo"
+
+// console.log(playsBanjo('Robert')) // Robert does play banjo
+// console.log(playsBanjo('robert')) // robert does play banjo
+// console.log(playsBanjo('John')) // John does not play banjo
